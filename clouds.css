@@ -1,0 +1,85 @@
+.cloud-one {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 3rem;
+    opacity: 60%;
+    animation: cloudmove 12s infinite alternate linear;
+}
+
+.cloud-one::before {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    top: -35px;
+    left: 30px;
+    border-radius: 3rem;
+}
+
+.cloud-one::after {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: -30px;
+    left: 75px;
+    border-radius: 3rem;
+}
+
+.cloud-two {
+    height: 60px;
+    width: 170px;
+    background-color: white;
+    margin-left: 250px;
+    border-radius: 3rem;
+    opacity: 60%;
+    animation: cloudmove 9s infinite alternate linear;
+}
+
+.cloud-two::before {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    top: -35px;
+    left: 30px;
+    border-radius: 3rem;
+}
+
+.cloud-two::after {
+    position: absolute;
+    content: "";
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    top: -45px;
+    left: 75px;
+    border-radius: 3rem;
+}
+
+@keyframes cloudmove{
+    to{ transform: translateX(70px) scale(0.5); }
+    from{ transform: translateX(0px) scale(0.5); }
+}
+
+@media(max-width: 490px) {
+    .cloud-two {
+        margin-left: 180px;
+    }
+}
+
+@media(max-width: 420px) {
+    .cloud-two {
+        margin-left: 150px;
+    }
+}
+
+@media(max-width: 380px) {
+    .cloud-two {
+        margin-left: 80px;
+    }
+}

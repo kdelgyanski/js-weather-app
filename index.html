@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="clouds.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Is it raining</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="heading text-center my-4">Is it raining?</h1>
+        <form class="text-center">
+            <input type="text" name="location" placeholder="Where? e.g. Vienna" class="form-control">
+        </form>
+
+        <div class="card rounded shadow">
+            <div class="day-time text-center py-5">
+                <div class="pt-2">
+                    <div class="cloud-one my-3"></div>
+                    <span class="condition display-4 my-5 text-center">Weather condition</span>
+                    <div class="cloud-two my-3"></div>
+                </div>
+            </div>
+            <div class="details text-center">
+                <h3 class="location my-3">Location</h3>
+                <span class="temp display-4 my-3">Temp &deg;C</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
