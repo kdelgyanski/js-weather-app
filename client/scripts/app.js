@@ -14,7 +14,6 @@ const updateElementByClass = (className, innerHTML) => {
 };
 
 const setDayTime = (isDayTime) => {
-    console.log(isDayTime);
     const dayTime = document.querySelector('#day-time');
     if (isDayTime) {
         dayTime.classList.remove('night');
@@ -25,11 +24,17 @@ const setDayTime = (isDayTime) => {
     }
 };
 
+const updateIcon = (icon) => {
+    const iconImg = document.querySelector('.icon > img');
+    iconImg.setAttribute('src', `assets/${icon}.png`);
+};
+
 const updateInfo = ({ locationData, currentConditions }) => {
     updateElementByClass('condition', currentConditions.WeatherText);
     updateElementByClass('location', `${locationData.EnglishName}, ${locationData.Country.EnglishName}`);
     updateElementByClass('temp', `${currentConditions.Temperature.Metric.Value}&deg;C`);
     setDayTime(currentConditions.IsDayTime);
+    updateIcon(currentConditions.WeatherIcon);
     card.classList.remove('d-none');
 };
 
