@@ -7,12 +7,16 @@ body {
     max-width: 500px;
 }
 
-.day-time {
+.day {
     background: #84D6E2;
 }
 
-.night-time {
+.night {
     background: #595055;
+}
+
+.night .condition {
+    color: white;
 }
 
 @media(max-width: 425px) {
