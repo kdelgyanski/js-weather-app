@@ -2,6 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
+    color: #333333;
 }
 .container {
     max-width: 500px;
